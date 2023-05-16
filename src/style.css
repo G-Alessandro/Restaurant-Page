@@ -1,3 +1,75 @@
+@font-face {
+  font-family: "Courgette-Regular";
+  src: url(./assets/fonts/Courgette-Regular/Courgette-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
 body {
-  background-color: #006eff;
+  background-image: url('./assets/imgs/pizza-wood-oven.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#content {
+  height: 500px;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgba(0, 0, 0, 0.459);
+  /* color: white; */
+  padding: 1rem;
+}
+
+.restaurant-name {
+  grid-column: 1 / 2;
+  display: flex;
+  font-family: "Courgette-Regular";
+  font-size: 4rem;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-container {
+  grid-column: 2 / 3;
+  display: grid;
+  font-size: 1.5rem;
+  font-weight: 900;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.about-us {
+  grid-column: 2 / 3;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 1rem 2.5rem;
+  background-color: rgba(0, 0, 0, 0.274);
+  border-radius: 20%;
+}
+
+.about-us-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.about-us-description {
+  font-size: 1.2rem;
+  font-weight: 900;
 }
