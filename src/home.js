@@ -17,6 +17,7 @@ const homeTab = document.createElement('div');
 homeTab.classList.add('tab-home');
 tabContainer.appendChild(homeTab);
 homeTab.innerText = 'Home';
+homeTab.style.borderBottom = '0.2rem solid white';
 
 const menuTab = document.createElement('div');
 menuTab.classList.add('tab-menu');

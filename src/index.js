@@ -1,2 +1,3 @@
 import './style.css';
-import './home';
+// import './home';
+import './menu';
