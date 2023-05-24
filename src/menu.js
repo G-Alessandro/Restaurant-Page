@@ -81,12 +81,12 @@ const pizzaMenuArray = [
     ingredient3: 'Peppers',
     ingredient4: 'Aubergines',
     ingredient5: 'Courgettes',
-    ingredient6: 'Various grilled vegetables',
+    ingredient6: 'Various vegetables',
     price: '3,00',
   },
   {
     pizza: 'quattro-formaggi',
-    title: 'Quattro formaggi',
+    title: 'Quattro Formaggi',
     ingredient1: 'Mozzarella',
     ingredient2: 'Gorgonzola',
     ingredient3: 'Fontina',
@@ -135,7 +135,3 @@ function createMenu() {
 }
 
 createMenu();
-
-const y = pizzaMenuArray[0][`ingredient${1}`];
-
-console.log('25', y);

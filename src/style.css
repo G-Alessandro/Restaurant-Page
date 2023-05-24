@@ -24,6 +24,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   background-color: rgba(0, 0, 0, 0.459);
+  border-bottom: .1rem solid white;
   padding: 1rem;
 }
 
@@ -63,19 +64,23 @@ body {
   display: grid;
   justify-items: center;
   align-items: center;
-  margin-top: 2rem;
-  padding: 1rem 1rem 2.5rem;
-  background-color: rgba(0, 0, 0, 0.274);
-  border-radius: 20%;
+  background-color: rgba(0, 0, 0, 0.459);
+  border: .1rem solid white;
+  border-radius: 2%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1rem 2rem 2rem;
+  margin-top: 5rem;
 }
 
-.about-us-title {
+.about-us>h1 {
+  font-family: "Courgette-Regular";
   font-size: 3rem;
   font-weight: 900;
 }
 
-.about-us-description {
-  font-size: 1.2rem;
+.about-us>p {
+  font-size: 1.3rem;
   font-weight: 900;
 }
 
@@ -84,19 +89,19 @@ body {
   justify-self: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  gap: 2rem ;
   width: 90rem;
   margin-top: 2rem;
-  background-color: rgba(0, 0, 0, 0.274);
-  border-radius: 12px;
 }
 
 .pizza {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
   justify-items: center;
   background-color: rgba(0, 0, 0, 0.274);
   border: .1rem solid white;
+  border-radius: 2% ;
 }
 
 .pizza>h2 {
@@ -104,13 +109,15 @@ body {
   font-size: 2rem;
   margin: 1rem 0 .7rem;
 }
-
+  
 .pizza-img {
   grid-area: 2 / 1 / 3 / 2;
   height: 100%;
-  width: 100%;
+  width: 80%;
   background-repeat: no-repeat;
   background-size: 100%;
+  border: .1rem solid white;
+  border-radius: 2%;
 }
 
 .pizza-margherita-img {
@@ -137,6 +144,10 @@ body {
   background-image: url('./assets/imgs/pizza-quattro-formaggi.jpg');
 }
 
+.pizza-ingr {
+  justify-self: start;
+}
+
 .pizza-ingr>ul {
   margin-left: 1.5rem;
 }
@@ -149,4 +160,29 @@ body {
 .price {
   grid-area: 3 / 1 / 4 / 3;
   font-size: 1.5rem;
+  align-self: center;
+}
+
+.contact-container {
+  display: grid;
+  justify-items: center;
+  width: 30rem;
+  justify-self: center;
+  background-color: rgba(0, 0, 0, 0.459);
+  margin-top: 5rem;
+  border: .1rem solid white;
+  border-radius: 2%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1rem;
+}
+
+.contact-container>h2 {
+  font-family: "Courgette-Regular";
+}
+
+.contact-container>div {
+  padding-bottom: .3rem;
+  margin-bottom: 1rem;
+  border-bottom: .1rem solid white;
 }

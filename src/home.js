@@ -38,11 +38,9 @@ aboutUs.classList.add('about-us');
 aboutUsContainer.appendChild(aboutUs);
 
 const aboutUsTitle = document.createElement('h1');
-aboutUsTitle.classList.add('about-us-title');
 aboutUs.appendChild(aboutUsTitle);
 aboutUsTitle.innerText = 'About Us';
 
 const aboutUsDescription = document.createElement('p');
-aboutUsDescription.classList.add('about-us-description');
 aboutUs.appendChild(aboutUsDescription);
 aboutUsDescription.innerText = 'Located in the heart of the city, we are committed to bringing you the authentic taste of Italy. Our dough is prepared by hand every day, following traditional Italian recipes. For us, the pizzeria is not just a matter of food. It is a place of meeting, conviviality and joy. We are proud to serve our community and to be a part of the Italian culinary tradition. The passion for pizza is reflected in every creation that comes out of our oven, and we can\'t wait for you to try our authentic gastronomic experience.';
