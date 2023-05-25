@@ -18,7 +18,6 @@ homeTab.classList.add('tab');
 homeTab.setAttribute('id', 'tab-home');
 tabContainer.appendChild(homeTab);
 homeTab.innerText = 'Home';
-// homeTab.style.borderBottom = '0.2rem solid white';
 
 const menuTab = document.createElement('div');
 menuTab.classList.add('tab');
