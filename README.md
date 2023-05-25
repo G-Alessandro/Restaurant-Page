@@ -2,7 +2,7 @@
 
 <p>Restaurant-Page built for practicing with webpack</p>
 
-<a href="https://g-alessandro.github.io/Restaurant-Page/">Live version</a>
+<a href="https://g-alessandro.github.io/Restaurant-Page/">Live preview</a>
 
 <h2>Things I've learned:</h2>
 
