@@ -16,7 +16,7 @@ body {
   background-size: 100%;
 }
 
-#content {
+#content, #container {
   display: grid;
 }
 

@@ -1,38 +1,3 @@
-const content = document.getElementById('content');
-
-const topBar = document.createElement('div');
-topBar.classList.add('top-bar');
-content.appendChild(topBar);
-
-const restaurantName = document.createElement('div');
-restaurantName.classList.add('restaurant-name');
-topBar.appendChild(restaurantName);
-restaurantName.innerText = 'Pizzeria Cornicione';
-
-const tabContainer = document.createElement('div');
-tabContainer.classList.add('tab-container');
-topBar.appendChild(tabContainer);
-
-const homeTab = document.createElement('div');
-homeTab.classList.add('tab', 'tab-home');
-tabContainer.appendChild(homeTab);
-homeTab.innerText = 'Home';
-
-const menuTab = document.createElement('div');
-menuTab.classList.add('tab', 'tab-menu');
-tabContainer.appendChild(menuTab);
-menuTab.innerText = 'Menu';
-menuTab.style.borderBottom = '0.2rem solid white';
-
-const contactTab = document.createElement('div');
-contactTab.classList.add('tab', 'tab-contact');
-tabContainer.appendChild(contactTab);
-contactTab.innerText = 'Contact';
-
-const pizzaMenuContainer = document.createElement('div');
-pizzaMenuContainer.classList.add('pizza-menu-container');
-content.appendChild(pizzaMenuContainer);
-
 const pizzaMenuArray = [
   {
     pizza: 'margherita',
@@ -97,6 +62,14 @@ const pizzaMenuArray = [
 ];
 
 function createMenu() {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+
+  const pizzaMenuContainer = document.createElement('div');
+  pizzaMenuContainer.classList.add('pizza-menu-container');
+  container.appendChild(pizzaMenuContainer);
+
   const arrayLength = pizzaMenuArray.length;
   for (let i = 0; i < arrayLength; i += 1) {
     const pizzaClass = pizzaMenuArray[i].pizza;
@@ -134,4 +107,4 @@ function createMenu() {
   }
 }
 
-createMenu();
+export { createMenu };
