@@ -1,3 +1,4 @@
+//Start
 const content = document.getElementById('content');
 
 const topBar = document.createElement('div');
